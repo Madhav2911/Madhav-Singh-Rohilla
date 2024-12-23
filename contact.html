@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Ice Cream Bliss</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f8f8f8;
+            color: #333;
+        }
+        header {
+            background: #ff6f61;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #ff9980;
+            padding: 10px;
+        }
+        nav a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        .contact-section {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .contact-section h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .contact-section p {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 1.2rem;
+            color: #666;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        form label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        form input, form textarea {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        form textarea {
+            resize: none;
+            height: 100px;
+        }
+        form button {
+            padding: 10px 15px;
+            background: #ff6f61;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+        form button:hover {
+            background: #ff9980;
+        }
+        .contact-info {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 1.1rem;
+            color: #444;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #444;
+            color: #f8f8f8;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+    <nav>
+        <a href="./main.html">Home</a>
+        <a href="./flavours.html">Flavors</a>
+        <a href="./about.html">About Us</a>
+        <a href="./contact.html">Contact</a>
+    </nav>
+    <main class="container">
+        <section class="contact-section">
+            <h1>We'd Love to Hear From You!</h1>
+            <p>If you have any questions, suggestions, or just want to say hi, drop us a message below.</p>
+            <form action="" method="post">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" placeholder="Write your message here" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+            <div class="contact-info">
+                <p>Email: contact@icecreambliss.com</p>
+                <p>Phone: +1 234 567 890</p>
+                <p>Address: 123 Bliss Lane, Sweet City, SC 12345</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Ice Cream Bliss. All rights reserved.</p>
+    </footer>
+</body>
+</html>

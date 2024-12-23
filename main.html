@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Ice Cream Bliss</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f8f8f8;
+            color: #333;
+        }
+        header {
+            background: #ff6f61;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #ff9980;
+            padding: 10px;
+        }
+        nav a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .hero {
+            position: relative;
+            overflow: hidden;
+        }
+        .hero img {
+            width: 100%;
+            height: auto;
+        }
+        .hero .hero-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #fff;
+            font-size: 1.5rem;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .cta-button {
+            background: #ff6f61;
+            color: #fff;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .cta-button:hover {
+            background: #ff4f3a;
+        }
+        .flavors-section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .flavor-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .flavor-card {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 20px;
+        }
+        .flavor-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        .flavor-card h3 {
+            font-size: 1.5rem;
+            color: #ff6f61;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: #444;
+            color: #f8f8f8;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Ice Cream Bliss!</h1>
+    </header>
+    <nav>
+        <a href="./main.html">Home</a>
+        <a href="./flavours.html">Flavors</a>
+        <a href="./about.html">About Us</a>
+        <a href="./contact.html">Contact</a>
+    </nav>
+    <main>
+        <section class="hero">
+            <img src="./front1.jpg" alt="Ice Cream Parlour">
+            <div class="hero-text">
+                <p>Step into our cozy parlor and experience the finest ice cream in town, served with a smile!</p>
+            </div>
+        </section>
+
+        <section class="flavors-section">
+            <h2>Popular Flavors</h2>
+            <div class="flavor-cards">
+                <div class="flavor-card">
+                    <img src="./vanilla delight.jpeg" alt="Vanilla">
+                    <h3>Vanilla Bean</h3>
+                    <p>A timeless classic, made with pure vanilla beans for a rich and creamy experience.</p>
+                </div>
+                <div class="flavor-card">
+                    <img src="./chocolate.jpeg" alt="Chocolate">
+                    <h3>Chocolate Fudge</h3>
+                    <p>Decadent and smooth, this flavor is perfect for all chocolate lovers!</p>
+                </div>
+                <div class="flavor-card">
+                    <img src="./strawberry.jpeg" alt="Strawberry">
+                    <h3>Strawberry Delight</h3>
+                    <p>Fresh, fruity, and creamy, this flavor is packed with the goodness of strawberries.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2024 Ice Cream Bliss. All rights reserved.</p>
+    </footer>
+</body>
+</html>
